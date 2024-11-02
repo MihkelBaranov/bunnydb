@@ -1,4 +1,4 @@
-```markdown
+
 # JSON Database Library Documentation
 
 ## Table of Contents
@@ -343,7 +343,6 @@ try {
     console.error('Unexpected error:', error);
   }
 }
-```
 
 ## Best Practices
 1. Always define primary keys
@@ -351,4 +350,3 @@ try {
 3. Keep the database file size manageable
 4. Implement proper error handling
 5. Use transactions for related operations
-```
