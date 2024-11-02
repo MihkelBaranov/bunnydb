@@ -1,10 +1,10 @@
 import { afterAll, afterEach, describe, test, expect, beforeAll } from "bun:test";
-import { BaseEntity, Column, JsonDB, Entity } from "../index";
+import { BaseEntity, Column, BunnyDB, Entity } from "../index";
 
-let db: JsonDB;
+let db: BunnyDB;
 
 beforeAll(() => {
-	db = new JsonDB('test.db.json');
+	db = new BunnyDB('test.db.json');
 	BaseEntity.setDatabase(db);
 });
 

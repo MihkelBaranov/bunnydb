@@ -188,8 +188,8 @@ class IndexStructure {
 	}
 }
 
-// JsonDB Implementation
-export class JsonDB {
+// BunnyDB Implementation
+export class BunnyDB {
 	private data: Map<string, Map<any, any>> = new Map();
 	private indices: Map<string, Map<string, IndexStructure>> = new Map();
 	private filePath: string;
@@ -847,13 +847,13 @@ class QueryBuilder<T extends BaseEntity> {
 // Base Entity Implementation
 export abstract class BaseEntity {
 	id: any;
-	private static db: JsonDB;
+	private static db: BunnyDB;
 
-	static setDatabase(db: JsonDB) {
+	static setDatabase(db: BunnyDB) {
 		this.db = db;
 	}
 
-	protected static getDatabase(): JsonDB {
+	protected static getDatabase(): BunnyDB {
 		if (!this.db) {
 			throw new Error('Database not initialized');
 		}

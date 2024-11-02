@@ -20,7 +20,7 @@ bun add bunnydb
 ## Quick Start
 
 ```typescript
-import { JsonDB, BaseEntity, Entity, Column } from 'bunnydb';
+import { BunnyDB, BaseEntity, Entity, Column } from 'bunnydb';
 
 // Define an entity
 @Entity('users')
@@ -36,7 +36,7 @@ class User extends BaseEntity {
 }
 
 // Initialize database
-const db = new JsonDB('database.json');
+const db = new BunnyDB('database.json');
 BaseEntity.setDatabase(db);
 
 // Use the entity
@@ -61,10 +61,10 @@ async function example() {
 ## Core Concepts
 
 ### Database
-The JsonDB class handles all file operations and data management. It stores data in a JSON file and provides in-memory indexing for improved query performance.
+The BunnyDB class handles all file operations and data management. It stores data in a JSON file and provides in-memory indexing for improved query performance.
 
 ```typescript
-const db = new JsonDB('database.json', true); // Second parameter is autoSave
+const db = new BunnyDB('database.json', true); // Second parameter is autoSave
 ```
 
 ### Entities
@@ -189,9 +189,9 @@ class User extends BaseEntity {
 
 ## API Reference
 
-### JsonDB Class
+### BunnyDB Class
 ```typescript
-class JsonDB {
+class BunnyDB {
   constructor(filePath: string, autoSave?: boolean);
   
   findWithOptions<T>(
