@@ -343,6 +343,7 @@ try {
     console.error('Unexpected error:', error);
   }
 }
+```
 
 ## Best Practices
 1. Always define primary keys
