@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		// Enable latest features
+		"lib": [
+			"ESNext",
+			"DOM"
+		],
+		"target": "ESNext",
+		"module": "ESNext",
+		"jsx": "react-jsx",
+		"allowJs": true,
+		// Bundler mode
+		"moduleResolution": "node",
+		"allowImportingTsExtensions": true,
+		"verbatimModuleSyntax": true,
+		"noEmit": true, // Useful when using Bun, as it handles bundling
+		// Best practices
+		"strict": false,
+		"skipLibCheck": true,
+		"noFallthroughCasesInSwitch": false,
+		// Some stricter flags (disabled by default)
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"noPropertyAccessFromIndexSignature": false,
+		// Required for decorators
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true
+	}
+}
