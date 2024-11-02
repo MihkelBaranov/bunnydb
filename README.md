@@ -14,13 +14,13 @@
 ## Installation
 
 ```bash
-bun add json-db-lite
+bun add bunnydb
 ```
 
 ## Quick Start
 
 ```typescript
-import { JsonDB, BaseEntity, Entity, Column } from 'json-db-lite';
+import { JsonDB, BaseEntity, Entity, Column } from 'bunnydb';
 
 // Define an entity
 @Entity('users')
